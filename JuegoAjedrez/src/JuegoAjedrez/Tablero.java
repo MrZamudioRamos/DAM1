@@ -2,38 +2,29 @@ package JuegoAjedrez;
 
 public class Tablero {
 	
-	private char tabla[][] = new char[8][8];
-	private char casilla = 'B';
+	private int tabla[][] = new int[8][8];
 	
-	
+        
 	public Tablero() {
-		
-		for (int i = 0; i < tabla.length; i++) {
-			for (int j = 0; j < tabla.length; j++) {
-				tabla [i][j] = casilla;
-				
-				if (casilla == 'B') {
-					casilla = 'N';
-				}else {
-					casilla = 'B';
-				}
-			}
-		}
-		
+            
 	}
+        public int mostrarTablero(int[][]tabla){
+            return 63;
+        }
 	
-	public char[][] getTabla() {
+	public int[][] getTabla() {
 		
 		return tabla;
 	}
 	
-	public void setTabla(char[][] tabla) {
+	public void setTabla(int[][] tabla) {
 		
 		this.tabla = tabla;
 	}
 
-	public boolean hayPieza(Posicion pos) {
-	
+	public boolean hayPieza(Posicion posic) {
+            boolean hayPieza = true;
+           
 		return true;
 	}
 	public boolean hayPieza(int fila, int columna) {

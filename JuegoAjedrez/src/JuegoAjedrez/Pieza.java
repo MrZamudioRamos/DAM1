@@ -1,35 +1,55 @@
 package JuegoAjedrez;
 
-public class Pieza extends Tablero {
-	
-	private String color;
-	private String nombre;
-	
-	public Pieza(String color, String nombre) {
-		this.color = color;
-		this.nombre = nombre;
-	}
+public abstract class Pieza {
 
-	public String getColor() {
-		return color;
-	}
+    private String color;
+    private String nombre;
+    private String posicion;
+    private boolean enJuego;
 
-	public void setColor(String color) {
-		this.color = color;
-	}
+    public Pieza() {
 
-	public String getNombre() {
-		return nombre;
-	}
+    }
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    public Pieza(String color, String nombre) {
+        this.color = color;
+        this.nombre = nombre;
+    }
 
-	@Override
-	public String toString() {
-		return "Pieza [color=" + color + ", nombre=" + nombre + "]";
-	}
-	
-	
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public boolean isEnJuego() {
+        return enJuego;
+    }
+
+    public abstract String figuraPieza();
+
+    @Override
+    public String toString() {
+        return "Pieza{" + "color=" + color + ", nombre=" + nombre + ", posicion=" + posicion + ", enJuego=" + enJuego + '}';
+    }
+
+    
 }
