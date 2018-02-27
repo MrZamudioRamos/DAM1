@@ -2,20 +2,23 @@ package ajedrez;
 
 public class Juego {
 
-	private int elTurno; // 0->Negras 1->Blancas
+	private int turnoJugador = 1; // 0->Negras 1->Blancas
 
 	public int getTurno(){
 		
-		return elTurno;
+		return turnoJugador;
 	}
 
 	public void setElTurno(int elTurno) {
-		this.elTurno = elTurno;
+		this.turnoJugador = elTurno;
 	}
 
 
 	public void inicializar(Tablero tablero) {
-		
+            System.out.println("Bienvenidos! Soy Ajedrezín\n");
+            pintar(tablero);
+            System.out.println("Es el turno del jugador " + turnoJugador + " " + this.toString());
+            System.out.println("Por favor, introduzca su jugada:");
 	}
 
 	public void pintar(Tablero tablero) {

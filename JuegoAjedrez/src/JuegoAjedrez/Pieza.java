@@ -1,4 +1,4 @@
-package ajedrez;
+package JuegoAjedrez;
 
 public abstract class Pieza {
 
