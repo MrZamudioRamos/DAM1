@@ -13,7 +13,6 @@ public class Juego {
 		this.turnoJugador = elTurno;
 	}
 
-
 	public void inicializar(Tablero tablero) {
             System.out.println("Bienvenidos! Soy Ajedrezín\n");
             pintar(tablero);
