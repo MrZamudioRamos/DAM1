@@ -51,5 +51,4 @@ public abstract class Pieza {
         return "Pieza{" + "color=" + color + ", nombre=" + nombre + ", posicion=" + posicion + ", enJuego=" + enJuego + '}';
     }
 
-    
 }
