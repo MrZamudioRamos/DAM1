@@ -7,6 +7,7 @@ package ajedrez;
 public class Alfil extends Pieza {
 
     String pieza;
+    double valor = 3.5;
 
     public Alfil(String pieza) {
         this.pieza = pieza;
@@ -15,6 +16,10 @@ public class Alfil extends Pieza {
     public Alfil(String pieza, String color, String nombre) {
         super(color, nombre);
         this.pieza = pieza;
+    }
+    
+    public double getValor(){
+        return valor;
     }
     
     public boolean puedeMoverse(Movimiento mov) {

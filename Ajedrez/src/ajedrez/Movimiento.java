@@ -1,5 +1,8 @@
 package ajedrez;
-
+/**
+ * 
+ * @author Ricardo
+ */
 public class Movimiento {
 
     private Posicion posInicial;
@@ -8,7 +11,11 @@ public class Movimiento {
     public Movimiento() {
 
     }
-
+    /**
+     * 
+     * @param posInicial
+     * @param posFinal 
+     */
     public Movimiento(Posicion posInicial, Posicion posFinal) {
         this.posInicial = posInicial;
         this.posFinal = posFinal;

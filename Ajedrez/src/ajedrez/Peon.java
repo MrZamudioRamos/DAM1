@@ -12,12 +12,17 @@ package ajedrez;
 public class Peon extends Pieza {
 
     String pieza;
+    int valor = 1;
 
     public Peon() {
     }
 
     public Peon(String color, String nombre) {
         super(color, nombre);
+    }
+    
+    public int getValor(){
+        return valor;
     }
 
     @Override

@@ -8,6 +8,7 @@ public abstract class Pieza {
     private boolean enJuego;
 
     public Pieza() {
+        
 
     }
 

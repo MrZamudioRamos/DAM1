@@ -21,6 +21,7 @@ public class Rey extends Pieza {
     }
 
     public boolean puedeMoverse(Movimiento mov) {
+        
         boolean puedeMoverse = false;
 
         if (mov.movRey()) {
