@@ -12,6 +12,7 @@ package ajedrez;
 public class Reina extends Pieza {
 
     String pieza;
+    int valor = 10;
 
     public Reina(String pieza) {
         this.pieza = pieza;
@@ -20,6 +21,10 @@ public class Reina extends Pieza {
     public Reina(String pieza, String color, String nombre) {
         super(color, nombre);
         this.pieza = pieza;
+    }
+    
+    public int getValor(){
+        return valor;
     }
 
     public boolean puedeMoverse(Movimiento mov) {

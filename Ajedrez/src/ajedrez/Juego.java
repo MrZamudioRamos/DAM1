@@ -13,14 +13,14 @@ public class Juego {
 		this.turnoJugador = elTurno;
 	}
 
-	public void inicializar(Tablero tablero) {
+	public void inicializar(Pieza tablero) {
             System.out.println("Bienvenidos! Soy Ajedrezín\n");
             pintar(tablero);
             System.out.println("Es el turno del jugador " + turnoJugador + " " + this.toString());
-            System.out.println("Por favor, introduzca su jugada:");
+            
 	}
 
-	public void pintar(Tablero tablero) {
+	public void pintar(Pieza tablero) {
 		
 	}
 

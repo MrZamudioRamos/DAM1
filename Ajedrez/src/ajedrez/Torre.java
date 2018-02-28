@@ -7,6 +7,7 @@ package ajedrez;
 public class Torre extends Pieza {
 
     String pieza;
+    double valor = 5.5;
 
     public Torre(String pieza) {
         this.pieza = pieza;
@@ -15,6 +16,10 @@ public class Torre extends Pieza {
     public Torre(String pieza, String color, String nombre) {
         super(color, nombre);
         this.pieza = pieza;
+    }
+    
+    public double getValor(){
+        return valor;
     }
 
     public boolean puedeMoverse(Movimiento mov) {

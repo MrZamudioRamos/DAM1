@@ -3,7 +3,6 @@ package ajedrez;
 public class Tablero {
 
     private Pieza tablero[][] = new Pieza[8][8];
-    private boolean hayPieza;
 
     public Tablero() {
 
@@ -77,7 +76,10 @@ public class Tablero {
     }
 
     public void Mover(Movimiento mov) {
-
+        boolean mover = false;
+       
+        
+       
     }
 
     public boolean esValido(int valor) {
