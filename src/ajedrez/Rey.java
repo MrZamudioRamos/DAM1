@@ -16,7 +16,7 @@ public class Rey extends Pieza {
     public Rey() {
     }
 
-    public Rey(String color, String nombre) {
+    public Rey(char color, char nombre) {
         super(color, nombre);
     }
 
@@ -31,13 +31,9 @@ public class Rey extends Pieza {
     }
 
     @Override
-    public String figuraPieza() {
-        if (this.getColor().compareToIgnoreCase("blanca") == 0) {
-            pieza = "2654";
-        } else {
-            pieza = "265A";
-        }
-        return pieza;
+    public boolean movimientoValido(Movimiento mov) {
+        return false;
     }
+
 
 }

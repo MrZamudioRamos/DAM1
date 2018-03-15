@@ -18,7 +18,7 @@ public class Reina extends Pieza {
         this.pieza = pieza;
     }
 
-    public Reina(String pieza, String color, String nombre) {
+    public Reina(String pieza, char color, char nombre) {
         super(color, nombre);
         this.pieza = pieza;
     }
@@ -37,13 +37,8 @@ public class Reina extends Pieza {
     }
 
     @Override
-    public String figuraPieza() {
-        if (this.getColor().compareToIgnoreCase("blanca") == 0) {
-            pieza = "2655";
-        } else {
-            pieza = "265B";
-        }
-        return pieza;
+    public boolean movimientoValido(Movimiento mov) {
+        return false;
     }
 
 }

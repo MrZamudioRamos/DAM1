@@ -13,7 +13,7 @@ public class Torre extends Pieza {
         this.pieza = pieza;
     }
 
-    public Torre(String pieza, String color, String nombre) {
+    public Torre(String pieza, char color, char nombre) {
         super(color, nombre);
         this.pieza = pieza;
     }
@@ -32,13 +32,9 @@ public class Torre extends Pieza {
     }
 
     @Override
-    public String figuraPieza() {
-        if (this.getColor().compareToIgnoreCase("blanca") == 0) {
-            pieza = "2656";
-        } else {
-            pieza = "265C";
-        }
-        return pieza;
+    public boolean movimientoValido(Movimiento mov) {
+        return false;
     }
+
 
 }

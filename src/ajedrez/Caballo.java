@@ -18,7 +18,7 @@ public class Caballo extends Pieza {
         this.pieza = pieza;
     }
 
-    public Caballo(String pieza, String color, String nombre) {
+    public Caballo(String pieza, char color, char nombre) {
         super(color, nombre);
         this.pieza = pieza;
     }
@@ -37,13 +37,8 @@ public class Caballo extends Pieza {
     }
 
     @Override
-    public String figuraPieza() {
-        if (this.getColor().compareToIgnoreCase("blanca") == 0) {
-            pieza = "2658";
-        } else {
-            pieza = "265E";
-        }
-        return pieza;
+    public boolean movimientoValido(Movimiento mov) {
+        return false;
     }
 
 }

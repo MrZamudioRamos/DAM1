@@ -13,7 +13,7 @@ public class Alfil extends Pieza {
         this.pieza = pieza;
     }
 
-    public Alfil(String pieza, String color, String nombre) {
+    public Alfil(String pieza, char color, char nombre) {
         super(color, nombre);
         this.pieza = pieza;
     }
@@ -32,12 +32,8 @@ public class Alfil extends Pieza {
     }
 
     @Override
-    public String figuraPieza() {
-        if (this.getColor().compareToIgnoreCase("blanca") == 0) {
-            pieza = "2657";
-        } else {
-            pieza = "265D";
-        }
-        return pieza;
+    public boolean movimientoValido(Movimiento mov) {
+        return false;
     }
+
 }
